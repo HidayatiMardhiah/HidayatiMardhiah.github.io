@@ -53,42 +53,18 @@
       z-index: 2;
     }
 
-    .status-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(200, 240, 60, 0.08);
-      border: 1px solid rgba(200, 240, 60, 0.25);
-      padding: 6px 14px;
-      border-radius: 100px;
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      color: var(--accent);
-      text-transform: uppercase;
-      margin-bottom: 40px;
-      width: fit-content;
-      animation: fadeInUp 0.6s ease both;
-    }
-    .status-dot {
-      width: 6px; height: 6px;
-      background: var(--accent);
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-
     h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(45px, 6vw, 70px);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(45px, 6vw, 50px);
       line-height: 0.95;
       letter-spacing: -2px;
       margin-bottom: 8px;
       animation: fadeInUp 0.7s 0.1s ease both;
+      
     }
-    h1 em {
-      font-style: italic;
-      color: var(--accent);
-      display: block;
+
+    #name {
+        color: var(--accent)
     }
 
     .hero-sub {
@@ -97,7 +73,7 @@
       font-weight: 700;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--text);
       margin: 24px 0 32px;
       animation: fadeInUp 0.7s 0.2s ease both;
     }
@@ -108,7 +84,8 @@
       font-size: 13px;
       line-height: 1.8;
       animation: fadeInUp 0.7s 0.3s ease both;
-      margin-bottom: 40px;
+      margin-top: -20px;
+      margin-bottom: 20px;
     }
 
     .hero-tags {
@@ -117,16 +94,20 @@
       gap: 8px;
       animation: fadeInUp 0.7s 0.4s ease both;
     }
+
     .tag {
       padding: 5px 12px;
       border: 1px solid var(--border);
       border-radius: 4px;
       font-size: 11px;
       letter-spacing: 0.05em;
-      color: var(--muted);
-      transition: all 0.2s;
+      color:var(--text);
     }
-    .tag:hover { border-color: var(--accent); color: var(--accent); }
+
+    .tag i {
+      margin-right: 14px;
+      font-size:15px;
+    }
 
     .hero-right {
       position: relative;
@@ -508,7 +489,7 @@
 
     .contact-big {
       font-family: 'DM Serif Display', serif;
-      font-size: clamp(48px, 8vw, 110px);
+      font-size: clamp(48px, 8vw, 70px);
       line-height: 0.9;
       letter-spacing: -3px;
       margin-bottom: 40px;
