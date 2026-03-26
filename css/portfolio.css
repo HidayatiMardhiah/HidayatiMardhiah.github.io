@@ -274,21 +274,6 @@
     .project-card:hover { background: #0d0d14; }
     .project-card:hover::before { opacity: 1; }
 
-    .project-card.featured {
-      grid-column: span 2;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-
-    .card-number {
-      font-size: 11px;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      margin-bottom: 24px;
-      font-family: 'Space Mono', monospace;
-    }
-
     .card-icon {
       width: 48px; height: 48px;
       border-radius: 12px;
@@ -364,32 +349,6 @@
       border-color: var(--accent);
       color: var(--accent);
       transform: translate(2px, -2px);
-    }
-
-    /* featured card visual */
-    .featured-visual {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, rgba(200,240,60,0.05), rgba(126,184,255,0.05));
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      min-height: 200px;
-      font-size: 52px;
-      position: relative;
-      overflow: hidden;
-    }
-    .featured-visual::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 20px,
-        rgba(200,240,60,0.02) 20px,
-        rgba(200,240,60,0.02) 21px
-      );
     }
 
     /* ── ABOUT / SKILLS ── */
