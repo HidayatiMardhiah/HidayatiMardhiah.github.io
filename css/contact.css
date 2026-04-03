@@ -22,7 +22,19 @@
       background: var(--surface);
       border-top: 1px solid var(--border);
       text-align: center;
-      padding: 240px 20px;
+      padding: 278px 10px;
+    }
+
+    .section-label{
+        font-family: 'Space Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--accent);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
     }
 
     .contact-big {
@@ -73,3 +85,4 @@
       background: #d4f545;
       color: #0a0a0f;
     }
+

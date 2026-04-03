@@ -46,23 +46,23 @@
         font-size: clamp(36px, 4vw, 40px);
         line-height: 1.05;
         letter-spacing: -1.5px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 
-    #projects { background: var(--bg); }
+    #projects { background: var(--surface); }
 
     .projects-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: stretch;
-        gap: 20px;
+        gap: 10px;
     }
 
     .project-card {
-        background: var(--surface); 
+        background: var(--bg); 
         border: 1px solid var(--border);  
         border-radius: 8px;  
-        padding: 40px;
+        padding: 30px;
         position: relative;
         overflow: hidden;
         cursor: none;
