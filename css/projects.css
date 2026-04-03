@@ -1,0 +1,173 @@
+
+/* ── PROJECTS ── */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+:root {
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --border: #1e1e2e;
+      --accent: #c8f03c;
+      --text: #e8e8f0;
+      --muted: #6b6b82;
+    }
+
+    body {
+      background: var(--surface);
+      color: var(--text);
+      font-family: 'Space Mono', monospace;
+      font-size: 14px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      cursor: none;
+    }
+    
+    section {
+        padding: 100px 60px;
+    }
+
+    .section-label {
+        font-family: 'Space Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--accent);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-family: 'Space Mono', monospace;
+        font-size: clamp(36px, 4vw, 40px);
+        line-height: 1.05;
+        letter-spacing: -1.5px;
+        margin-bottom: 20px;
+    }
+
+    #projects { background: var(--surface); }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .project-card {
+        background: var(--bg); 
+        border: 1px solid var(--border);  
+        border-radius: 8px;  
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        cursor: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .card-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .card-desc {
+      font-size: 13px;
+      color: #7a7a96;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .card-preview {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: top; /* shows from the top of the image */
+      border-radius: 8px;
+      margin: 16px 0;
+  }
+
+    .card-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .card-btn {
+        flex: 1;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.08);
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        transition: background 0.2s;
+        cursor: pointer; /* add this */
+        position: relative; /* add this */
+        z-index: 10; /* add this */
+    }
+
+    .card-btn:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .card-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 28px;
+    }
+    .stack-chip {
+      padding: 3px 10px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      font-size: 10px;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+
+    .card-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .status-indicator {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+    }
+    .status-building { background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+    .status-planning { background: var(--accent3); }
+    .status-early { background: var(--accent2); }
+
+    .card-arrow {
+      position: absolute;
+      bottom: 32px; right: 32px;
+      width: 36px; height: 36px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      transition: all 0.2s;
+      color: var(--muted);
+    }
+    .project-card:hover .card-arrow {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translate(2px, -2px);
+    }
