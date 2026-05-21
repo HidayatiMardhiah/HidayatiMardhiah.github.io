@@ -1,15 +1,15 @@
-
-    :root {
-      --bg: #0a0a0f;
-      --surface: #12121a;
-      --border: #1e1e2e;
-      --accent: #c8f03c;
-      --accent2: #ff6b9d;
-      --accent3: #7eb8ff;
-      --text: #e8e8f0;
-      --muted: #6b6b82;
-      --glow: rgba(200, 240, 60, 0.15);
-    }
+:root {
+     --bg: #050E17;
+    --surface: #0a1520;
+    --border: #1C4A5C;
+    --accent: #00D4E8;
+    --accent2: #E03A4A;
+    --accent3: #6BBFCE;
+    --text: #CEF3F7;
+    --muted: #3A7A8C;
+    --glow: rgba(0, 212, 232, 0.15);
+    --warning: #E03A4A;
+      }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -18,7 +18,7 @@
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'Space Mono', monospace;
+      font-family: 'Share Tech Mono', monospace;
       font-size: 14px;
       line-height: 1.7;
       overflow-x: hidden;
