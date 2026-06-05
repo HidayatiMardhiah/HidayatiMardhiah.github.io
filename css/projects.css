@@ -1,0 +1,227 @@
+/* ── PROJECTS ── */
+
+:root {
+  --bg: #050E17;
+  --surface: #0a1520;
+  --border: #1C4A5C;
+  --accent: #00D4E8;
+  --accent2: #E03A4A;
+  --accent3: #6BBFCE;
+  --text: #CEF3F7;
+  --muted: #3A7A8C;
+  --glow: rgba(0, 212, 232, 0.15);
+}
+
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+section {
+  padding: 100px 60px;
+}
+
+.section-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.section-label::after {
+  content: '';
+  flex: 1;
+  max-width: 60px;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.4;
+}
+
+.projects-big {
+  font-family: 'Oxanium', sans-serif;
+  font-size: clamp(48px, 8vw, 70px);
+  line-height: 1.2;
+  letter-spacing: -2px;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, var(--text) 0%, var(--accent3) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#projects {
+  background: var(--bg);
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  gap: 12px;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--border);
+  border-radius: 4px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: border-left-color 0.3s ease;
+}
+
+.project-card:hover {
+  border-left-color: var(--accent);
+}
+
+.card-title {
+  font-family: 'Oxanium', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.card-desc {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.card-preview {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  margin: 16px 0;
+}
+
+.card-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.card-btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--accent3);
+  text-decoration: none;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.card-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 212, 232, 0.05);
+}
+
+.card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+
+.stack-chip {
+  padding: 3px 10px;
+  background: rgba(0, 212, 232, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--accent3);
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.card-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.status-indicator {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.status-building {
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.status-planning {
+  background: var(--accent3);
+}
+
+.status-early {
+  background: var(--accent2);
+}
+
+.card-arrow {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.2s;
+  color: var(--muted);
+}
+
+.project-card:hover .card-arrow {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
