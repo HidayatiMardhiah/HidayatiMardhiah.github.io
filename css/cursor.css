@@ -1,0 +1,29 @@
+.cursor{
+    width: 30px;
+    height: 30px;
+    border-color: #00D4E8;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    animation: reticle-pulse 2s ease-in-out infinite;
+}
+
+@keyframes reticle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.cursor-round{
+    width: 7px;
+    height: 7px;
+    background-color: #00D4E8;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+}
