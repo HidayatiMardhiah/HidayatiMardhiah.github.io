@@ -154,18 +154,6 @@ h1 {
   display: block;
 }
 
-.bright-ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  border-top-color: rgba(0, 212, 232, 0.9);
-  width: 420px;
-  height: 420px;
-  transform-origin: center;
-  animation: spin 3s linear infinite;
-  z-index: 2;
-}
-
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
@@ -189,53 +177,6 @@ h1 {
   z-index: 10;
 }
 
-.profile-pic {
-  width: 70%;
-  height: 70%;
-  object-fit: cover;
-  object-position: center;
-  color: transparent;
-}
-.dp {
-  position: absolute;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  z-index: 10;
-}
-
-.dp span:first-child { color: var(--muted); }
-.dp span:last-child { color: var(--accent3); }
-
-.dp:nth-child(3) {
-  top: 10px;
-  left: -30px;
-}
-
-.dp:nth-child(4) {
-  top: 10px;
-  right: -20px;
-  text-align: right;
-}
-
-.dp:nth-child(5) {
-  bottom: 10px;
-  left: -20px;
-}
-
-.dp:nth-child(6) {
-  bottom: 10px;
-  right: -20px;
-  text-align: right;
-}
-
-.dp:nth-child(7) {
-  top: 10px;
-  left: -20px;
-}
 
 section { padding: 100px 60px; }
 
@@ -299,43 +240,6 @@ h2 em { font-style: italic; color: var(--accent2); }
   padding-right: 60px;
   padding-left: 20px;
   overflow: visible;
-}
-
-.dossier {
-  position: absolute;
-  right: 0;
-  top: 70%;
-  transform: translateY(-50%) translateX(20px);
-  width: 260px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 2px solid var(--accent);
-  padding: 20px;
-  z-index: 30;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.dossier.open {
-  opacity: 1;
-  pointer-events: all;
-  transform: translateY(-50%) translateX(-280px);
-}
-
-.click-hint {
-  position: absolute;
-  bottom: -28px;
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  color: var(--muted);
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.dos-divider{
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 .hero-sub, .hero-desc, .hero-tags, .hero-right, h1 {
